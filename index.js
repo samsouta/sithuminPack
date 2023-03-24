@@ -1,4 +1,4 @@
-function showLoader(){
+export function showLoader(){
     const loaderDiv = document.createElement("div");
     loaderDiv.classList.add("loader");
     loaderDiv.innerHTML = `<div class="vh-100 loader d-flex justify-content-center align-items-center fixed-top" >
@@ -9,13 +9,13 @@ function showLoader(){
 }
 
 
-function removeLoader(){
+export function removeLoader(){
     const loaderDiv = document.querySelector(".loader");
     loaderDiv.remove();
 }
 // end 
 
-function showProgess(){
+export function showProgess(){
     const loaderDiv = document.createElement("div");
     loaderDiv.classList.add("top-progess");
     loaderDiv.innerHTML = `<div class="progress top-fixed" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -24,7 +24,7 @@ function showProgess(){
     document.body.append(loaderDiv);
 }
 
-function removeProgess(){
+export function removeProgess(){
     const loaderDiv = document.querySelector(".top-progess");
     loaderDiv.remove();
 }
